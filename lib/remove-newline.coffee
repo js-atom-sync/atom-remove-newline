@@ -1,6 +1,6 @@
 {CompositeDisposable} = require 'atom'
 
-module.exports = RemoveWhitespace =
+module.exports = RemoveNewline =
   subscriptions: null
 
   config:
@@ -12,8 +12,8 @@ module.exports = RemoveWhitespace =
     @subscriptions = new CompositeDisposable
 
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'remove-whitespace:remove': => @replace(/\n+/g, ''),
-      'remove-whitespace:replace': => @replace(/\n+/g, atom.config.get('remove-whitespace.insertString'))
+      'remove-newline:remove': => @replace(/\n+/g, ''),
+      'remove-newline:replace': => @replace(/\n+/g, atom.config.get('remove-newline.insertString'))
 
   deactivate: ->
     @subscriptions.dispose()

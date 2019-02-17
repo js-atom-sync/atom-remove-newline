@@ -1,16 +1,16 @@
 {
-  "name": "remove-whitespace",
-  "main": "./lib/remove-whitespace",
+  "name": "remove-newline",
+  "main": "./lib/remove-newline",
   "version": "0.2.1",
-  "description": "Remove, shrink, replace whitespace in the selected text",
+  "description": "Remove, replace newline characters in the selected text",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "remove-whitespace:remove",
-      "remove-whitespace:replace"
+      "remove-newline:remove",
+      "remove-newline:replace"
     ]
   },
-  "repository": "https://github.com/nkmk/atom-remove-whitespace",
+  "repository": "https://github.com/nkmk/atom-remove-newline",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

@@ -13,6 +13,7 @@ module.exports = RemoveNewline =
 
     @subscriptions.add atom.commands.add 'atom-workspace',
       'remove-newline:remove': => @replace(/\n+/g, ''),
+      'remove-newline:shrink': => @replace(/\n+/g, ' '),
       'remove-newline:replace': => @replace(/\n+/g, atom.config.get('remove-newline.insertString'))
 
   deactivate: ->

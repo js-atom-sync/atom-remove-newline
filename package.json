@@ -7,7 +7,6 @@
   "activationCommands": {
     "atom-workspace": [
       "remove-whitespace:remove",
-      "remove-whitespace:shrink",
       "remove-whitespace:replace"
     ]
   },

@@ -1,7 +1,7 @@
 {
   "name": "remove-newline",
   "main": "./lib/remove-newline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove, replace newline characters in the selected text",
   "keywords": [],
   "activationCommands": {

@@ -13,7 +13,6 @@ module.exports = RemoveWhitespace =
 
     @subscriptions.add atom.commands.add 'atom-workspace',
       'remove-whitespace:remove': => @replace(/\s+/g, ''),
-      'remove-whitespace:shrink': => @replace(/\s+/g, ' '),
       'remove-whitespace:replace': => @replace(/\s+/g, atom.config.get('remove-whitespace.insertString'))
 
   deactivate: ->

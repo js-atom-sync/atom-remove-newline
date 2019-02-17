@@ -1,6 +1,6 @@
 # remove-newline package
 
-Remove newline characters (\n) in the selected text.
+Remove, shrink, replace newline (\n) in the selected text.
 
 ## Install
 ```sh
@@ -11,15 +11,13 @@ Or search for `remove-newline` in Atom settings view.
 
 ## Commands
 
-### Remove Newline: Remove
+### Remove newline: Remove
 
 ```
 aa bb   c c  dd => aabbccdd
 ```
 
-```
-
-### Remove Whitespace: Replace
+### Remove newline: Replace
 
 You can change the inserted string in package setting.
 
@@ -35,8 +33,5 @@ For example:
 ```coffeescript
 'atom-workspace':
   'ctrl-alt-r': 'remove-newline:remove'
-  'ctrl-alt-s': 'remove-newline:shrink'
   'ctrl-alt-p': 'remove-newline:replace'
-  
-  This is a fork of remove-whitespace
 ```

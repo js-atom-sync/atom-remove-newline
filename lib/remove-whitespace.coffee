@@ -12,8 +12,8 @@ module.exports = RemoveWhitespace =
     @subscriptions = new CompositeDisposable
 
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'remove-whitespace:remove': => @replace(/\s+/g, ''),
-      'remove-whitespace:replace': => @replace(/\s+/g, atom.config.get('remove-whitespace.insertString'))
+      'remove-whitespace:remove': => @replace(/\n+/g, ''),
+      'remove-whitespace:replace': => @replace(/\n+/g, atom.config.get('remove-whitespace.insertString'))
 
   deactivate: ->
     @subscriptions.dispose()

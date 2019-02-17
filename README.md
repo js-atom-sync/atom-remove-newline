@@ -1,6 +1,6 @@
-# remove-whitespace package
+# remove-newlines package
 
-Remove, shrink, replace whitespace in the selected text.
+Remove newline characters (\n) in the selected text.
 
 ## Install
 ```sh

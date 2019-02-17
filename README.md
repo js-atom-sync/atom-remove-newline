@@ -1,4 +1,4 @@
-# remove-newlines package
+# remove-newline package
 
 Remove newline characters (\n) in the selected text.
 

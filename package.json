@@ -10,7 +10,7 @@
       "remove-newline:replace"
     ]
   },
-  "repository": "https://github.com/nkmk/atom-remove-newline",
+  "repository": "https://github.com/js-atom-sync/atom-remove-newline",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

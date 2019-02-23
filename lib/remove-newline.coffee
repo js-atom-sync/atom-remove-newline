@@ -16,8 +16,13 @@ module.exports = RemoveNewline =
       'remove-newline:shrink': => @replace(/\n+/g, ' '),
       'remove-newline:replace': => @replace(/\n+/g, atom.config.get('remove-newline.insertString')),
       "remove-newline:pasteandshrink": => 
-        editor.pasteText({select: true})
-        @replace(/\n+/g, ' ')
+          editor = atom.workspace.getActiveTextEditor()
+            # If there's no active text editor, then default to the normal paste command.
+            # credit to https://discuss.atom.io/t/how-do-i-enable-sublime-like-paste-and-indent/41294/2
+            if not editor then atom.commands.dispatch document.querySelector('atom-workspace'), 'core:paste'
+            else
+              editor.pasteText({select: true})
+              @replace(/\n+/g, ' ')
 
   deactivate: ->
     @subscriptions.dispose()

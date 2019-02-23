@@ -8,7 +8,8 @@
     "atom-workspace": [
       "remove-newline:remove",
       "remove-newline:shrink",
-      "remove-newline:replace"
+      "remove-newline:replace",
+      "remove-newline:pasteandshrink"
     ]
   },
   "repository": "https://github.com/js-atom-sync/atom-remove-newline",
